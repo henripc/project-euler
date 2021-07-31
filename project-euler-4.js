@@ -24,7 +24,7 @@ function largestPalindrome() {
 // and if the quotient is a 3 - digit number p / d = q -> p = d * q
 function is3DigitNumberProduct(number) {
     for (let i = 999; i > 99; i--) {
-        if ((number % i == 0) && Math.floor(number / i).toString().length == 3)
+        if ((number % i === 0) && Math.floor(number / i).toString().length === 3)
             return true;
     }
 
@@ -34,7 +34,7 @@ function is3DigitNumberProduct(number) {
 // Verify if a given number is a palindrome
 function isNumberPalindrome(number) {
     const reversedNumber = number.toString().split("").reverse().join("");
-    return number.toString() == reversedNumber;
+    return number.toString() === reversedNumber;
 }
 
 const answer = largestPalindrome();

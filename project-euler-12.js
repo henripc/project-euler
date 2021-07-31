@@ -25,10 +25,10 @@ function numberOfFactors(number) {
     let numOfFactors = 2;
     
     for (let i = 1; i <= Math.sqrt(number); i++) {
-        if (number % i == 0) numOfFactors += 2;
+        if (number % i === 0) numOfFactors += 2;
     }
 
-    if (Math.sqrt(number) ** 2 == number) numOfFactors--;
+    if (Math.sqrt(number) ** 2 === number) numOfFactors--;
 
     return numOfFactors;
 }

@@ -12,7 +12,7 @@ function isPrime(n) {
     if (n % 2 == 0) return false;
 
     for (let i = 3; i <= Math.sqrt(n); i += 2) {
-        if (n % i == 0) return false;
+        if (n % i === 0) return false;
     }
 
     return true;
@@ -23,7 +23,7 @@ let i = 3;
 while (true) {
     if (isPrime(i)) {
         count++;
-        if (count == 10_001) break;
+        if (count === 10_001) break;
     }
     i += 2;
 }

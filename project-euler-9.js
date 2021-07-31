@@ -24,7 +24,7 @@ function solution() {
             a = m * m - n * n;
             b = 2 * m * n;
             c = m * m + n * n;
-            if (a + b + c == limit) return a * b * c
+            if (a + b + c === limit) return a * b * c
         }
     }
 

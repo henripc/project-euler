@@ -20,7 +20,7 @@
 function collatzSeq(startNumber) {
     let steps = 0;
     while (startNumber != 1) {
-        startNumber = startNumber % 2 == 0 ? startNumber / 2 : 3 * startNumber + 1;
+        startNumber = startNumber % 2 === 0 ? startNumber / 2 : 3 * startNumber + 1;
         steps++;
     }
 

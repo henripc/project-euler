@@ -15,7 +15,7 @@ function largestPrimeFactor(n) {
     let primeFactors = [];
     let count = 0;
 
-    while (n % 2 == 0) {
+    while (n % 2 === 0) {
         n = Math.floor(n / 2);
         count++;
     }
@@ -24,7 +24,7 @@ function largestPrimeFactor(n) {
 
     for (let i = 3; i <= Math.sqrt(n); i += 2) {
         count = 0;
-        while (n % i == 0) {
+        while (n % i === 0) {
             n = Math.floor(n / i);
             count++;
         }

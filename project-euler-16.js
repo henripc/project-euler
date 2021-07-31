@@ -8,10 +8,10 @@
 // A fast algorithm for exponentiation: exponentiation by squaring.
 // https://www.programminglogic.com/fast-exponentiation-algorithms/
 function expo(a, b) {
-    if (b == 1) return a;
-    if (b == 2) return a * a;
+    if (b === 1) return a;
+    if (b === 2) return a * a;
 
-    if (b % 2 == 0) return expo(expo(a, b / 2), 2);
+    if (b % 2 === 0) return expo(expo(a, b / 2), 2);
     else return a * expo(expo(a, (b - 1) / 2), 2);
 }
 
