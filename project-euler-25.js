@@ -15,14 +15,11 @@
 
 let a = 1n;
 let b = 1n;
-let c;
 let index = 2;
 while (true) {
-    c = a + b;
+    [a, b] = [b, a + b];
     index++;
-    if (c.toString().length >= 1000) break;
-    a = b;
-    b = c;
+    if (b.toString().length >= 1000) break;
 }
 
-console.log(index, (time2 - time1) + ' ms');
+console.log(index);
