@@ -34,7 +34,7 @@ function numberOfFactors(number) {
 }
 
 let triangleNumber = 0;
-for (let i = 1; triangleNumber < Number.MAX_VALUE; i++) {
+for (let i = 1; triangleNumber < Number.MAX_SAFE_INTEGER; i++) {
     triangleNumber += i;
     if (numberOfFactors(triangleNumber) > 500) break;
 }

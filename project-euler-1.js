@@ -17,8 +17,8 @@ function sumOfNumbers(n) {
 // sum(3k) = 3*(n/3)*(n/3 + 1)/2
 // sum(5k) = 5*(n/5)*(n/5 + 1)/2
 // sum(15k) = 15*(n/15)*(n/15 + 1)/2
-let n = 999;
-let answer = 3 * sumOfNumbers(Math.floor(n / 3)) +
+const n = 999;
+const answer = 3 * sumOfNumbers(Math.floor(n / 3)) +
     5 * sumOfNumbers(Math.floor(n / 5)) -
     15 * sumOfNumbers(Math.floor(n / 15));
 

@@ -10,7 +10,7 @@
 
 // Creates the fibonacci sequence for the first n elements.
 function fibonacciSeqNTerms(n) {
-    let fibSeq = [1, 2];
+    const fibSeq = [1, 2];
 
     for (let i = 2; i < n; i++) {
         fibSeq.push(fibSeq[i - 1] + fibSeq[i - 2]);

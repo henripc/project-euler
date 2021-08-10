@@ -12,7 +12,7 @@
 // step 3: If n is a prime number and greater than 2, then n will not become 1 by the 
 //         above two steps.Save n if it is greater than 2.
 function largestPrimeFactor(n) {
-    let primeFactors = [];
+    const primeFactors = [];
     let count = 0;
 
     while (n % 2 === 0) {
