@@ -108,4 +108,4 @@ const digitNumbers = `37107287533902102798797998220837590246510135740250
 const sumOfAllNumbers = digitNumbers.split('\n').map(x => BigInt(x))
     .reduce((accumulator, currentValue) => accumulator + currentValue);
 const firstTenDigits = sumOfAllNumbers.toString().substr(0, 10);
-console.log(firstTenDigits, sumOfAllNumbers);
+console.log(firstTenDigits);

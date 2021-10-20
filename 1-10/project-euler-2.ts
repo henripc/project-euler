@@ -9,7 +9,7 @@
 // --------------------
 
 // Creates the fibonacci sequence for the first n elements.
-function fibonacciSeqNTerms(n) {
+function fibonacciSeqNTerms(n: number): Array<number> {
     const fibSeq = [1, 2];
 
     for (let i = 2; i < n; i++) {
@@ -23,7 +23,7 @@ function fibonacciSeqNTerms(n) {
 // Except the first even number(2) all the others occur every 3 positions.
 // ex.: for n = 20 we have 
 // [1, 2 *, 3, 5, 8 *, 13, 21, 34 *, 55, 89, 144 *, 233, 377, 610 *, 987, 1597, 2584 *, 4181, 6765, 10946 *]
-function sumOfAllEven(fibSeq) {
+function sumOfAllEven(fibSeq: Array<number>): number {
     const LIMIT_NUMBER = 4_000_000;
     let result = 0;
 

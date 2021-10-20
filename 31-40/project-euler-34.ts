@@ -8,15 +8,15 @@
 
 // --------------------
 
-function factorial(number) {
+function factorial(num: number): number {
     let factorialResult = 1;
-    for (let i = 1; i <= number; i++) factorialResult *= i;
+    for (let i = 1; i <= num; i++) factorialResult *= i;
 
     return factorialResult;
 }
 
 const limit = 100_000;
-let sumOfFactorials;
+let sumOfFactorials: number;
 let result = 0;
 
 for (let i = 10; i < limit; i++) {

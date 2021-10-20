@@ -7,7 +7,7 @@
 
 // See Project Euler question #7
 // this function verify if a number is prime
-function isPrime(n) {
+function isPrime(n: number): boolean {
     if (n <= 1) return false;
     if (n <= 3) return true;
     if (n % 2 === 0) return false;

@@ -8,13 +8,12 @@
 
 // Smallest number made from the product of two 3-digit numbers: 100 * 100 = 10000
 // Biggest number made from the product of two 3-digit numbers: 999 * 999 = 998001
-function largestPalindrome() {
+function largestPalindrome(): number {
     const biggestNumber = 998_001;
     const smallestNumber = 10_000;
 
     for (let i = biggestNumber; i >= smallestNumber; i--) {
-        if (isNumberPalindrome(i) && is3DigitNumberProduct(i))
-            return i;
+        if (isNumberPalindrome(i) && is3DigitNumberProduct(i))  return i;
     }
 
     return 0;
@@ -22,9 +21,9 @@ function largestPalindrome() {
 
 // verify if the number is evenly divisible by a 3 - digit number
 // and if the quotient is a 3 - digit number p / d = q -> p = d * q
-function is3DigitNumberProduct(number) {
+function is3DigitNumberProduct(num: number): boolean {
     for (let i = 999; i > 99; i--) {
-        if ((number % i === 0) && Math.floor(number / i).toString().length === 3)
+        if ((num % i === 0) && Math.floor(num / i).toString().length === 3)
             return true;
     }
 
@@ -32,9 +31,9 @@ function is3DigitNumberProduct(number) {
 }
 
 // Verify if a given number is a palindrome
-function isNumberPalindrome(number) {
-    const reversedNumber = number.toString().split("").reverse().join("");
-    return number.toString() === reversedNumber;
+function isNumberPalindrome(num: number): boolean {
+    const reversedNumber = num.toString().split("").reverse().join("");
+    return num.toString() === reversedNumber;
 }
 
 const answer = largestPalindrome();

@@ -21,14 +21,14 @@
 
 // Find all factors of an integer, then return the number of factors
 // algorithm used => https://www.rookieslab.com/posts/most-efficient-way-to-find-all-factors-of-a-number-python-cpp
-function numberOfFactors(number) {
+function numberOfFactors(num: number): number {
     let numOfFactors = 2;
-    
-    for (let i = 1; i <= Math.sqrt(number); i++) {
-        if (number % i === 0) numOfFactors += 2;
+
+    for (let i = 1; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) numOfFactors += 2;
     }
 
-    if (Math.sqrt(number) ** 2 === number) numOfFactors--;
+    if (Math.sqrt(num) ** 2 === num) numOfFactors--;
 
     return numOfFactors;
 }

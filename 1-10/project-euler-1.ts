@@ -6,7 +6,7 @@
 // --------------------
 
 // sum(k) = n*(n+1)/2
-function sumOfNumbers(n) {
+function sumOfNumbers(n: number): number {
     return n * (n + 1) / 2;
 }
 

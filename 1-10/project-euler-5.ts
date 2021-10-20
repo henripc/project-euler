@@ -11,13 +11,13 @@
 
 // LCM - Least Common Multiple
 // LCM(x1, x2, ..., xk) = LCM(...LCM(LCM(x1, x2), x3), ...), xk)
-function lcm(a, b) {
+function lcm(a: number, b: number): number {
     return Math.floor(a / gcd(a, b)) * b;
 }
 
 // GCD - Greatest Common Divisor
 // Euclidean algorithm
-function gcd(a, b) {
+function gcd(a: number, b: number): number {
     if (a === 0) return b;
     return gcd(b % a, a);
 }

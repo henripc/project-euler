@@ -8,7 +8,7 @@
 // --------------------
 
 const limit = 100;
-let result;
+let result: number;
 let maxResult = 0;
 
 for (let i = 2n; i < limit; i++) {

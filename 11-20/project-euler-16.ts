@@ -7,7 +7,7 @@
 
 // A fast algorithm for exponentiation: exponentiation by squaring.
 // https://www.programminglogic.com/fast-exponentiation-algorithms/
-function expo(a, b) {
+function expo(a: bigint, b: number): bigint {
     if (b === 1) return a;
     if (b === 2) return a * a;
 

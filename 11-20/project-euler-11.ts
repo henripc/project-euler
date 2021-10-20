@@ -57,9 +57,9 @@ const numbersArray = grid.split(/\s/).map(x => Number(x));
 // direction: right
 // we don't need to take into consideration the left direction
 // because this way we already consider all possibilities
-function maxHorizontalProduct() {
+function maxHorizontalProduct(): number {
     let maxResult = 0;
-    let result;
+    let result: number;
 
     for (let i = 0; i < 20; i++) {
         for (let j = i * 20; j < 20 * (1 + i) - 3; j++) {
@@ -76,9 +76,9 @@ function maxHorizontalProduct() {
 // direction: down
 // we don't need to take into consideration the up direction
 // because this way we already consider all possibilities
-function maxVerticalProduct() {
+function maxVerticalProduct(): number {
     let maxResult = 0;
-    let result;
+    let result: number;
 
     for (let i = 0; i < 20; i++) {
         for (let j = i; j <= 320 + i; j += 20) {
@@ -95,9 +95,9 @@ function maxVerticalProduct() {
 // direction: right diagonal down
 // we don't need to take into consideration the left diagonal up direction
 // because this way we already consider all possibilities
-function maxRightDiagonalProduct() {
+function maxRightDiagonalProduct(): number {
     let maxResult = 0;
-    let result;
+    let result: number;
 
     for (let i = 0; i < 17; i++) {
         for (let j = i * 20; j < 20 * (1 + i) - 3; j++) {
@@ -114,9 +114,9 @@ function maxRightDiagonalProduct() {
 // direction: left diagonal down
 // we don't need to take into consideration the left diagonal up direction
 // because this way we already consider all possibilities
-function maxLeftDiagonalProduct() {
+function maxLeftDiagonalProduct(): number {
     let maxResult = 0;
-    let result;
+    let result: number;
 
     for (let i = 0; i < 17; i++) {
         for (let j = i * 20 + 3; j < 20 * (1 + i); j++) {

@@ -11,8 +11,8 @@
 //         save i(one time) and divide n by i, increment i by 2 and continue.
 // step 3: If n is a prime number and greater than 2, then n will not become 1 by the 
 //         above two steps.Save n if it is greater than 2.
-function largestPrimeFactor(n) {
-    const primeFactors = [];
+function largestPrimeFactor(n: number): number {
+    const primeFactors: Array<number> = [];
     let count = 0;
 
     while (n % 2 === 0) {

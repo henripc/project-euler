@@ -6,7 +6,7 @@
 // --------------------
 
 // See Project Euler question #3 (this one is modified because we don't need to keep the factors)
-function isPrime(n) {
+function isPrime(n: number): boolean {
     if (n <= 1) return false;
     if (n <= 3) return true;
     if (n % 2 == 0) return false;

@@ -9,13 +9,13 @@
 // --------------------
 
 // Verify if a given number is a palindrome
-function isNumberPalindrome(number) {
-    if (typeof number === "string") {
-        return number === number.split("").reverse().join("");
+function isNumberPalindrome(num: number | string): boolean {
+    if (typeof num === "string") {
+        return num === num.split("").reverse().join("");
     }
 
-    const reversedNumber = number.toString().split("").reverse().join("");
-    return number.toString() === reversedNumber;
+    const reversedNumber = num.toString().split("").reverse().join("");
+    return num.toString() === reversedNumber;
 }
 
 const limit = 1_000_000;

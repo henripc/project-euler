@@ -17,7 +17,7 @@
 
 // --------------------
 
-function collatzSeq(startNumber) {
+function collatzSeq(startNumber: number): number {
     let steps = 0;
     while (startNumber != 1) {
         startNumber = startNumber % 2 === 0 ? startNumber / 2 : 3 * startNumber + 1;
@@ -30,7 +30,7 @@ function collatzSeq(startNumber) {
 const limit = 1_000_000;
 let steps = 0;
 let startNumber = 0;
-let tempStep;
+let tempStep: number;
 
 for (let i = 1; i < limit; i++) {
     tempStep = collatzSeq(i);
