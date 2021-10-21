@@ -15,11 +15,11 @@ function factorial(num: number): number {
     return factorialResult;
 }
 
-const limit = 100_000;
+const LIMIT = 100_000;
 let sumOfFactorials: number;
 let result = 0;
 
-for (let i = 10; i < limit; i++) {
+for (let i = 10; i < LIMIT; i++) {
     sumOfFactorials = i.toString().split("").map(x => factorial(Number(x)))
         .reduce((accumulator, currentValue) => accumulator + currentValue);
 
