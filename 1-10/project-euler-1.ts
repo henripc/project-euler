@@ -6,8 +6,8 @@
 // --------------------
 
 // sum(k) = n*(n+1)/2
-function sumOfNumbers(n: number): number {
-    return n * (n + 1) / 2;
+function sumOfNumbers(num: number): number {
+    return num * (num + 1) / 2;
 }
 
 // number of multiple of 3 below n = n/3
