@@ -7,12 +7,12 @@
 
 // --------------------
 
-const limit = 100;
+const LIMIT = 100;
 let result: number;
 let maxResult = 0;
 
-for (let i = 2n; i < limit; i++) {
-    for (let j = 1n; j < limit; j++) {
+for (let i = 2n; i < LIMIT; i++) {
+    for (let j = 1n; j < LIMIT; j++) {
         result = (i ** j).toString().split("").map(x => Number(x))
             .reduce((accumulator, currentValue) => accumulator + currentValue);
         maxResult = result > maxResult ? result : maxResult;
