@@ -9,10 +9,10 @@
 // --------------------
 
 // Creates the fibonacci sequence for the first n elements.
-function fibonacciSeqNTerms(n: number): Array<number> {
+function fibonacciSeqNTerms(num: number): Array<number> {
     const fibSeq = [1, 2];
 
-    for (let i = 2; i < n; i++) {
+    for (let i = 2; i < num; i++) {
         fibSeq.push(fibSeq[i - 1] + fibSeq[i - 2]);
     }
 
@@ -37,5 +37,4 @@ function sumOfAllEven(fibSeq: Array<number>): number {
 
 const n = 32;
 const fibSeq = fibonacciSeqNTerms(n);
-const answer = sumOfAllEven(fibSeq);
-console.log(answer);
+console.log(sumOfAllEven(fibSeq));
