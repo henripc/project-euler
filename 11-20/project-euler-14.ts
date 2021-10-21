@@ -27,12 +27,12 @@ function collatzSeq(startNumber: number): number {
     return steps;
 }
 
-const limit = 1_000_000;
+const LIMIT = 1_000_000;
 let steps = 0;
 let startNumber = 0;
 let tempStep: number;
 
-for (let i = 1; i < limit; i++) {
+for (let i = 1; i < LIMIT; i++) {
     tempStep = collatzSeq(i);
     if (steps < tempStep) {
         steps = tempStep;
