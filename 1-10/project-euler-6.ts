@@ -13,5 +13,4 @@
 const n = 100;
 const sumOfNumbersSquared = (n * (n + 1) / 2) ** 2;
 const sumOfSquares = n * (n + 1) * (2 * n + 1) / 6;
-const answer = sumOfNumbersSquared - sumOfSquares;
-console.log(answer);
+console.log(sumOfNumbersSquared - sumOfSquares);
