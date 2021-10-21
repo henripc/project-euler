@@ -13,8 +13,8 @@
 
 // --------------------
 
-let a = 1n;
-let b = 1n;
+let a:bigint = 1n;
+let b:bigint = 1n;
 let index = 2;
 while (true) {
     [a, b] = [b, a + b];
