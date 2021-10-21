@@ -6,10 +6,10 @@
 
 // --------------------
 
-const limit = 1000;
-let result = 0n;
+const LIMIT = 1000;
+let result:bigint = 0n;
 
-for (let i = 1n; i <= limit; i++) {
+for (let i = 1n; i <= LIMIT; i++) {
     result += i ** i;
 }
 
