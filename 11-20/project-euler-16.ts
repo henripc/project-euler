@@ -15,8 +15,7 @@ function expo(a: bigint, b: number): bigint {
     else return a * expo(expo(a, (b - 1) / 2), 2);
 }
 
-const result = expo(2n, 1000);
-const answer = result.toString().split("").map(x => Number(x))
+const answer = expo(2n, 1000).toString().split("").map(x => Number(x))
     .reduce((accumulator, currentValue) => accumulator + currentValue);
 
 console.log(answer);
