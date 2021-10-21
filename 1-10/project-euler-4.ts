@@ -36,5 +36,4 @@ function isNumberPalindrome(num: number): boolean {
     return num.toString() === reversedNumber;
 }
 
-const answer = largestPalindrome();
-console.log(answer);
+console.log(largestPalindrome());
