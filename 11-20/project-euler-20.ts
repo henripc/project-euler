@@ -9,7 +9,7 @@
 
 // --------------------
 
-let factorialResult = 1n;
+let factorialResult:bigint = 1n;
 for (let i = 1n; i <= 100; i++) factorialResult *= i;
 const answer = factorialResult.toString().split("")
     .map(x => Number(x))
