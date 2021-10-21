@@ -31,14 +31,14 @@ const SERIES = `7316717653133062491922511967442657474235534919493496983520312774
 
 let result = 1;
 let subString: string;
-let substringResult: number;
+let subStringResult: number;
 
 for (let i = 0; i < SERIES.length - 12; i++) {
     subString = SERIES.substring(i, i + 13);
     if (subString.includes("0")) continue;
-    substringResult = subString.split("").map(x => Number(x))
+    subStringResult = subString.split("").map(x => Number(x))
         .reduce((accumulator, currentValue) => accumulator * currentValue);
-    result = substringResult > result ? substringResult : result;
+    result = subStringResult > result ? subStringResult : result;
 }
 
 console.log(result);
