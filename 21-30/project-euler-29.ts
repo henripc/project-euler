@@ -15,11 +15,9 @@
 // --------------------
 
 const distinctTerms = new Set<number>();
-
 for (let a = 2; a <= 100; a++) {
     for (let b = 2; b <= 100; b++) {
         distinctTerms.add(a ** b);
     }
 }
-
 console.log(distinctTerms.size);
