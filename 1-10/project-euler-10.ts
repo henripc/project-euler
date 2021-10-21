@@ -7,13 +7,13 @@
 
 // See Project Euler question #7
 // this function verify if a number is prime
-function isPrime(n: number): boolean {
-    if (n <= 1) return false;
-    if (n <= 3) return true;
-    if (n % 2 === 0) return false;
+function isPrime(num: number): boolean {
+    if (num <= 1) return false;
+    if (num <= 3) return true;
+    if (num % 2 === 0) return false;
 
-    for (let i = 3; i <= Math.sqrt(n); i += 2) {
-        if (n % i === 0) return false;
+    for (let i = 3; i <= Math.sqrt(num); i += 2) {
+        if (num % i === 0) return false;
     }
 
     return true;
