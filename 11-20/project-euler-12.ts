@@ -20,7 +20,8 @@
 // --------------------
 
 // Find all factors of an integer, then return the number of factors
-// algorithm used => https://www.rookieslab.com/posts/most-efficient-way-to-find-all-factors-of-a-number-python-cpp
+// algorithm used => 
+// https://www.rookieslab.com/posts/most-efficient-way-to-find-all-factors-of-a-number-python-cpp
 function numberOfFactors(num: number): number {
     let numOfFactors = 2;
 
