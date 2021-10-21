@@ -14,14 +14,13 @@ function isNumberPalindrome(num: number | string): boolean {
         return num === num.split("").reverse().join("");
     }
 
-    const reversedNumber = num.toString().split("").reverse().join("");
-    return num.toString() === reversedNumber;
+    return num.toString() === num.toString().split("").reverse().join("");
 }
 
-const limit = 1_000_000;
+const LIMIT = 1_000_000;
 let result = 0;
 
-for (let i = 1; i < limit; i++) {
+for (let i = 1; i < LIMIT; i++) {
     if (isNumberPalindrome(i) && isNumberPalindrome(i.toString(2))) result += i;
 }
 
